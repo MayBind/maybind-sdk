@@ -1,0 +1,61 @@
+[project]
+name = "maybind-sdk"
+version = "1.0.0"
+description = "MayBind Python SDK for Digital Twin Platform - Build and interact with AI digital twins"
+authors = [
+  {name = "MayBind Team", email = "developers@maybind.com"},
+]
+license = {text = "MIT"}
+readme = "README.md"
+keywords = ["MayBind", "Digital Twin", "AI", "SDK", "API", "OpenAPI"]
+requires-python = ">=3.9"
+
+dependencies = [
+  "urllib3 >= 2.1.0, < 3.0.0",
+  "python-dateutil >= 2.8.2",
+  "pydantic >= 2",
+  "typing-extensions >= 4.7.1"
+]
+
+[project.urls]
+Homepage = "https://maybind.com"
+Repository = "https://github.com/MayBind/maybind-sdk"
+Documentation = "https://github.com/MayBind/maybind-sdk/tree/main/docs"
+Issues = "https://github.com/MayBind/maybind-sdk/issues"
+"API Reference" = "https://github.com/MayBind/maybind-sdk/blob/main/docs/api_reference.md"
+
+[build-system]
+requires = ["setuptools >= 61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project.optional-dependencies]
+dev = [
+  "pytest >= 7.2.1",
+  "pytest-cov >= 2.8.1",
+  "flake8 >= 4.0.0",
+  "mypy >= 1.5",
+  "types-python-dateutil >= 2.8.19.14"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+addopts = "-v --tb=short"
+
+[tool.mypy]
+python_version = "3.9"
+files = [
+  "openapi_client",
+  "tests"
+]
+# Enable strict mode gradually
+warn_unused_configs = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+strict_equality = true
+extra_checks = true
+check_untyped_defs = true
+
+[tool.flake8]
+max-line-length = 99
+extend-ignore = ["E203", "W503"]
