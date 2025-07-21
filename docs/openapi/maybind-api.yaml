@@ -69,8 +69,7 @@ paths:
                 {
                     "timestamp": "<ISO8601 UTC string>",
                     "text": "<string>",
-                    "role": "system"|"twin",
-                    "source_twin_id": "<string>"
+                    "role": "user"|"twin"
                 }, ...
             ]
         }
@@ -83,12 +82,45 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/ChatRequest'
+            examples:
+              working_example:
+                summary: Ready-to-use chat example
+                description: Copy this exact JSON to test immediately
+                value:
+                  twin_id: "twin_001"
+                  messages:
+                    - timestamp: "2025-07-21T12:42:31Z"
+                      text: "Hello! How are you today?"
+                      role: "user"
       responses:
         '200':
           description: Successful Response
           content:
             application/json:
-              schema: {}
+              schema:
+                type: object
+                properties:
+                  messages:
+                    type: array
+                    items:
+                      type: object
+                  status:
+                    type: string
+                  twin_id:
+                    type: string
+              examples:
+                successful_response:
+                  summary: Typical successful response
+                  value:
+                    messages:
+                      - timestamp: "2025-07-21T12:42:31Z"
+                        text: "Hello! How are you today?"
+                        role: "user"
+                      - timestamp: "2025-07-21T12:42:35Z"
+                        text: "Hello! I'm doing great, thank you for asking! I'm here and ready to help you with whatever you need. How can I assist you today?"
+                        role: "twin"
+                    status: "success"
+                    twin_id: "twin_001"
         '422':
           description: Validation Error
           content:
@@ -107,12 +139,39 @@ components:
         twin_id:
           title: Twin Id
           type: string
+          example: "twin_001"
+          description: Unique identifier for the AI twin
         messages:
           title: Messages
           type: array
+          description: Array of conversation messages in chronological order
           items:
             type: object
-            additionalProperties: true
+            required:
+              - timestamp
+              - text
+              - role
+            properties:
+              timestamp:
+                type: string
+                format: date-time
+                example: "2025-07-21T12:42:31Z"
+                description: ISO8601 UTC timestamp when message was sent
+              text:
+                type: string
+                example: "Hello! How are you today?"
+                description: The actual message content
+              role:
+                type: string
+                enum: ["user", "twin"]
+                example: "user"
+                description: "Role of the sender: 'user' for user messages, 'twin' for AI responses"
+      example:
+        twin_id: "twin_001"
+        messages:
+          - timestamp: "2025-07-21T12:42:31Z"
+            text: "Hello! How are you today?"
+            role: "user"
     HTTPValidationError:
       title: HTTPValidationError
       type: object
