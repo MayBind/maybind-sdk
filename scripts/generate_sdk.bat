@@ -2,7 +2,7 @@
 REM Script to generate SDK from OpenAPI specification (Windows batch version)
 REM This script regenerates both Python and JavaScript SDKs from the OpenAPI spec
 
-echo MayBind SDK Generator
+echo Maybind SDK Generator
 echo ====================
 
 REM Configuration
@@ -52,7 +52,7 @@ openapi-generator generate ^
     -i "%OPENAPI_SPEC%" ^
     -g javascript ^
     -o "%JAVASCRIPT_OUTPUT_DIR%" ^
-    --additional-properties=projectName=maybind-sdk,projectVersion=1.0.0,moduleName=MayBindSDK
+    --additional-properties=projectName=maybind-sdk,projectVersion=1.0.0,moduleName=MaybindSDK
 
 if %errorlevel% neq 0 (
     echo [ERROR] JavaScript SDK generation failed

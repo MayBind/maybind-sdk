@@ -1,6 +1,6 @@
-# MayBind Python SDK
+# Maybind Python SDK
 
-Professional Python SDK for interacting with MayBind's AI Twin platform. This SDK provides easy-to-use interfaces for twin management, chat functionality, and API key verification.
+Professional Python SDK for interacting with Maybind's AI Twin platform. This SDK provides easy-to-use interfaces for twin management, chat functionality, and API key verification.
 
 ## 🚀 Quick Start
 
@@ -19,7 +19,7 @@ pip install -r requirements.txt
 Create a `.env` file in the SDK directory:
 
 ```bash
-# MayBind Python SDK Configuration
+# Maybind Python SDK Configuration
 MAYBIND_API_KEY=your_api_key_here
 MAYBIND_API_HOST=https://sdk.maybind.com
 MAYBIND_TWIN_ID=01
@@ -202,7 +202,7 @@ configuration.api_key['ApiKeyAuth'] = 'your_api_key_here'
 
 ## 📄 License
 
-This SDK is part of the MayBind platform.
+This SDK is part of the Maybind platform.
 
 ---
 

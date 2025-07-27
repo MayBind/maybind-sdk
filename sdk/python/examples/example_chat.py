@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Example usage of MayBind SDK for chat functionality.
+Example usage of Maybind SDK for chat functionality.
 """
 
 import os
@@ -87,7 +87,7 @@ def get_available_twins(api_instance):
 
 def main():
     """
-    Example demonstrating how to use the MayBind SDK for chat.
+    Example demonstrating how to use the Maybind SDK for chat.
     """
     
     # Load from .env file first, then environment variables

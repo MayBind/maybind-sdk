@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Basic tests for MayBind SDK functionality.
+Basic tests for Maybind SDK functionality.
 These tests focus on core SDK features that developers use most.
 """
 

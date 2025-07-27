@@ -1,13 +1,13 @@
 [project]
 name = "maybind-sdk"
 version = "1.0.0"
-description = "MayBind Python SDK for Digital Twin Platform - Build and interact with AI digital twins"
+description = "Maybind Python SDK for Digital Twin Platform - Build and interact with AI digital twins"
 authors = [
-  {name = "MayBind Team", email = "developers@maybind.com"},
+  {name = "Maybind Team", email = "developers@maybind.com"},
 ]
 license = {text = "MIT"}
 readme = "README.md"
-keywords = ["MayBind", "Digital Twin", "AI", "SDK", "API", "OpenAPI"]
+keywords = ["Maybind", "Digital Twin", "AI", "SDK", "API", "OpenAPI"]
 requires-python = ">=3.9"
 
 dependencies = [
@@ -19,10 +19,10 @@ dependencies = [
 
 [project.urls]
 Homepage = "https://maybind.com"
-Repository = "https://github.com/MayBind/maybind-sdk"
-Documentation = "https://github.com/MayBind/maybind-sdk/tree/main/docs"
-Issues = "https://github.com/MayBind/maybind-sdk/issues"
-"API Reference" = "https://github.com/MayBind/maybind-sdk/blob/main/docs/api_reference.md"
+Repository = "https://github.com/Maybind/maybind-sdk"
+Documentation = "https://github.com/Maybind/maybind-sdk/tree/main/docs"
+Issues = "https://github.com/Maybind/maybind-sdk/issues"
+"API Reference" = "https://github.com/Maybind/maybind-sdk/blob/main/docs/api_reference.md"
 
 [build-system]
 requires = ["setuptools >= 61.0", "wheel"]

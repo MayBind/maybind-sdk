@@ -4,7 +4,7 @@
 
 set -e
 
-echo "MayBind SDK Generator"
+echo "Maybind SDK Generator"
 echo "===================="
 
 # Configuration
@@ -75,7 +75,7 @@ openapi-generator generate \
     -i "$OPENAPI_SPEC" \
     -g javascript \
     -o "$JAVASCRIPT_OUTPUT_DIR" \
-    --additional-properties=projectName=maybind-sdk,projectVersion=1.0.0,moduleName=MayBindSDK
+    --additional-properties=projectName=maybind-sdk,projectVersion=1.0.0,moduleName=MaybindSDK
 
 print_status "JavaScript SDK generated successfully"
 

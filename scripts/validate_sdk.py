@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Validation script for MayBind SDK.
+Validation script for Maybind SDK.
 This script validates the generated SDK files and runs basic tests.
 """
 
@@ -177,7 +177,7 @@ def validate_examples():
 
 def main():
     """Main validation function."""
-    print("MayBind SDK Validation")
+    print("Maybind SDK Validation")
     print("=" * 30)
     
     validation_results = []

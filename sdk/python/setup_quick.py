@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Quick setup for MayBind Python SDK
+Quick setup for Maybind Python SDK
 Checks prerequisites, installs dependencies, and configures the environment.
 """
 
@@ -13,7 +13,7 @@ from pathlib import Path
 
 def print_header():
     """Print the header"""
-    print("🚀 MayBind SDK Quick Setup")
+    print("🚀 Maybind SDK Quick Setup")
     print("=" * 30)
 
 def check_python_version():
@@ -151,7 +151,7 @@ def setup_env_file():
     # Create default .env
     print("Creating .env with default settings...")
     try:
-        content = """# MayBind Python SDK Configuration
+        content = """# Maybind Python SDK Configuration
 MAYBIND_API_KEY=your_api_key_here
 MAYBIND_API_HOST=https://sdk.maybind.com
 """
@@ -310,7 +310,7 @@ def prompt_for_valid_api_key():
     """Prompt user for a valid API key with detailed instructions"""
     print("\nAPI Key Setup Required")
     print("=" * 40)
-    print("To use the MayBind SDK, you need a valid API key.")
+    print("To use the Maybind SDK, you need a valid API key.")
     print("\nHow to get your API key:")
     print("   1. Visit: https://maybind.com")
     print("   2. Click 'Login' and sign in to your account")
@@ -402,7 +402,7 @@ def main():
     api_key = get_api_key()
     if not api_key:
         print("⚠️  No valid API key found")
-        print("� Please enter your MayBind API key:")
+        print("� Please enter your Maybind API key:")
         
         # Interactive API key input
         try:

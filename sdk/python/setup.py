@@ -33,25 +33,25 @@ REQUIRES = [
 setup(
     name=NAME,
     version=VERSION,
-    description="MayBind Python SDK - Build and interact with Digital Twin services",
-    author="MayBind Team",
+    description="Maybind Python SDK - Build and interact with Digital Twin services",
+    author="Maybind Team",
     author_email="developers@maybind.com",
-    url="https://github.com/MayBind/maybind-sdk",
-    keywords=["MayBind", "Digital Twin", "AI", "SDK", "API"],
+    url="https://github.com/Maybind/maybind-sdk",
+    keywords=["Maybind", "Digital Twin", "AI", "SDK", "API"],
     install_requires=REQUIRES,
     packages=find_packages(exclude=["test", "tests"]),
     include_package_data=True,
     long_description_content_type='text/markdown',
     long_description="""\
-    MayBind Python SDK for building and interacting with Digital Twin services.
+    Maybind Python SDK for building and interacting with Digital Twin services.
     
-    This SDK provides easy access to the MayBind platform, allowing developers to:
+    This SDK provides easy access to the Maybind platform, allowing developers to:
     - Create and manage digital twin services
     - Interact with existing twin services
     - Handle authentication and API requests
     - Build applications that leverage digital twin technology
     
-    Visit https://maybind.com/ for more information about the MayBind platform.
+    Visit https://maybind.com/ for more information about the Maybind platform.
     """,  # noqa: E501
     package_data={"openapi_client": ["py.typed"]},
 )

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Configurazione semplificata per MayBind SDK
+Configurazione semplificata per Maybind SDK
 """
 
 import os
@@ -9,8 +9,8 @@ from . import Configuration, ApiClient
 from .api.default_api import DefaultApi
 
 
-class MayBindConfig:
-    """Classe per gestire la configurazione dell'SDK MayBind"""
+class MaybindConfig:
+    """Classe per gestire la configurazione dell'SDK Maybind"""
     
     def __init__(self, api_key=None, host=None, config_file=None):
         """
@@ -114,7 +114,7 @@ class MayBindConfig:
         
     def setup_config(self):
         """Aiuta l'utente a configurare l'API key"""
-        print("🔐 Configurazione MayBind SDK")
+        print("🔐 Configurazione Maybind SDK")
         print("=" * 40)
         
         if self.is_configured():
@@ -135,7 +135,7 @@ class MayBindConfig:
         print("   MAYBIND_API_HOST=https://sdk.maybind.com")
         
         print("\n3. Nel codice Python:")
-        print("   config = MayBindConfig(api_key='your_api_key_here')")
+        print("   config = MaybindConfig(api_key='your_api_key_here')")
         
         print("\n4. Configurazione interattiva:")
         try:
@@ -158,7 +158,7 @@ class MayBindConfig:
     def _save_to_env_file(self):
         """Salva la configurazione in .env"""
         try:
-            env_content = f"""# MayBind SDK Configuration
+            env_content = f"""# Maybind SDK Configuration
 MAYBIND_API_KEY={self.api_key}
 MAYBIND_API_HOST={self.host}
 """
@@ -199,7 +199,7 @@ MAYBIND_API_HOST={self.host}
 # Funzioni di utilità per semplificare l'uso
 def quick_setup():
     """Setup rapido dell'SDK"""
-    config = MayBindConfig()
+    config = MaybindConfig()
     
     if not config.setup_config():
         return None
@@ -208,7 +208,7 @@ def quick_setup():
 
 def get_configured_api():
     """Ottiene un'istanza API configurata"""
-    config = MayBindConfig()
+    config = MaybindConfig()
     
     if not config.is_configured():
         print("❌ API key non configurata!")
@@ -219,7 +219,7 @@ def get_configured_api():
 
 def test_sdk():
     """Test rapido dell'SDK"""
-    config = MayBindConfig()
+    config = MaybindConfig()
     
     if not config.is_configured():
         print("Configurazione necessaria...")

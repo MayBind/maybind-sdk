@@ -1,6 +1,6 @@
-# MayBind SDK Tests
+# Maybind SDK Tests
 
-This directory contains essential tests for the MayBind SDK that developers can run to verify their setup.
+This directory contains essential tests for the Maybind SDK that developers can run to verify their setup.
 
 ## Test Files
 

@@ -1,5 +1,5 @@
 <div style="width: 100vw; margin-left: calc(-50vw + 50%); margin-right: calc(-50vw + 50%); padding: 0;">
-  <img src="assets/maybind-logo.jpg" alt="MayBind Logo" style="width: 100%; display: block; margin: 0; padding: 0;">
+  <img src="assets/maybind-logo.jpg" alt="Maybind Logo" style="width: 100%; display: block; margin: 0; padding: 0;">
 </div>
 
 <div align="center" style="margin-top: 20px;">
@@ -11,10 +11,10 @@
   
 </div>
 
-> **Official SDK for MayBind Digital Twin Platform**  
+> **Official SDK for Maybind Digital Twin Platform**  
 > Build and interact with AI digital twins through our comprehensive API
 
-[MayBind](https://maybind.com) empowers users to create AI twins from conversation history and enables developers to build and monetize twin services through our marketplace.
+[Maybind](https://maybind.com) empowers users to create AI twins from conversation history and enables developers to build and monetize twin services through our marketplace.
 
 ## Core Features
 
@@ -61,7 +61,7 @@ print(response.messages[-1]['text'])  # Twin's response
 
 ## Authentication
 
-Get your API key from [MayBind Developer Dashboard](https://maybind.com/auth?type=developer):
+Get your API key from [Maybind Developer Dashboard](https://maybind.com/auth?type=developer):
 
 ```bash
 # Set your API key
@@ -77,7 +77,7 @@ export MAYBIND_API_KEY="your_api_key_here"
 
 ```bash
 # 1. Clone and setup
-git clone https://github.com/MayBind/maybind-sdk.git
+git clone https://github.com/Maybind/maybind-sdk.git
 cd maybind-sdk/sdk/python
 
 # 2. Run quick setup (interactive configuration)
@@ -129,7 +129,7 @@ OpenAPI spec: [`openapi/maybind-api.yaml`](openapi/maybind-api.yaml)
 ## 📋 Requirements
 
 - **Python**: 3.9+
-- **API Key**: From [MayBind Developer Dashboard](https://maybind.com)
+- **API Key**: From [Maybind Developer Dashboard](https://maybind.com)
 
 ## 📈 Roadmap
 
@@ -141,8 +141,8 @@ OpenAPI spec: [`openapi/maybind-api.yaml`](openapi/maybind-api.yaml)
 ## 🆘 Support
 
 - **📖 Documentation**: Check SDK-specific README files
-- **🐛 Issues**: [GitHub Issues](https://github.com/MayBind/maybind-sdk/issues)
-- **💬 Discussions**: [GitHub Discussions](https://github.com/MayBind/maybind-sdk/discussions)
+- **🐛 Issues**: [GitHub Issues](https://github.com/Maybind/maybind-sdk/issues)
+- **💬 Discussions**: [GitHub Discussions](https://github.com/Maybind/maybind-sdk/discussions)
 - **🌐 Contact**: Visit our dedicated support section at [https://maybind.com](https://maybind.com)
 
 ## 📄 License
@@ -153,7 +153,7 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 <div align="center">
 
-**[🌟 Star us on GitHub](https://github.com/MayBind/maybind-sdk)** | **[🌐 Visit MayBind.com](https://maybind.com)**
+**[🌟 Star us on GitHub](https://github.com/Maybind/maybind-sdk)** | **[🌐 Visit Maybind.com](https://maybind.com)**
 
 *Building the future of digital twins* 🤖✨
 

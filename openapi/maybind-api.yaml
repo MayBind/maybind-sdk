@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
-  title: MayBind API
-  description: MayBind SDK API for AI agent interactions
+  title: Maybind API
+  description: Maybind SDK API for AI agent interactions
   version: 1.0.0
 servers:
   - url: https://sdk.maybind.com
